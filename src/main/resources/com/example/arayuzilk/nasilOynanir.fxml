@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #ffe6cc;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.arayuzilk.HelloController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="900.0" prefWidth="421.0" style="-fx-background-color: #3F2862;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="902.0" prefWidth="421.0">
+               <children>
+                  <Button fx:id="menuyeDon" layoutX="14.0" layoutY="31.0" mnemonicParsing="false" onAction="#menuyeDon" prefHeight="34.0" prefWidth="126.0" style="-fx-background-color: #ffff33;" text="Ana Menüye Dön" />
+                  <Pane layoutX="111.0" layoutY="144.0" prefHeight="693.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="-176.0" layoutY="248.0" prefHeight="162.0" prefWidth="552.0" rotate="-90.0" style="-fx-text-fill: White;" text="NASIL OYNANIR ?">
+                           <font>
+                              <Font size="56.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Label layoutX="497.0" layoutY="36.0" prefHeight="59.0" prefWidth="622.0" text="TAŞ-KAĞIT-MAKAS OYUNU">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Text layoutX="460.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kullanıcı ve bilgisayarın seçmis olduğu nesnelerin karşılaştırılması ve skorların hesaplanması aşağıdaki formüllere göre yapılır. Buna göre bir hamlede karşı karşıya gelen iki nesnenin birbirine karşı etkileri ayrı ayrı hesaplanır. Sonrasında bir nesnenin etki miktarı kadar rakip nesnenin dayanıklılık değeri azaltılacaktır. Dayanıklılık değeri 0 veya 0’ın altına düşen nesneler oyundan elenecektir. Bir nesneyi yenen rakip nesnenin seviye puanını 20 artırılır." wrappingWidth="635.2607421875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="460.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Her oyuncunun 5 nesnesi vardır.Nesnelerin kendi içinde farklı özellikleri de vardır.Taşların diğer nesnelerden ayrı olarak katılık özelligi, kağıtlarda nüfuz ozelligi ve makaslarda ise keskinlik ozelliği yalnızca kendi sınıflarına ait özelliklerdir.Ayrıca bu 3 sınıfın bir dekendi içerisinde alt sınıfları bulunmaktadır. Bunlar taş sınıfının altında ağır taş sınıfı,kağıt sınıfının altında özel kağıt ve makas sınıfının altında ise usta makas sınıfları olacaktır.Sırasıyla ağır taş için sıcaklık, özel kağıt için kalınlık ve usta makas için direnç ozellikleri bu sınıflara özgü özelliklerdir." wrappingWidth="635.2607421875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="999.0" layoutY="815.0" mnemonicParsing="false" onAction="#silahSec" prefHeight="48.0" prefWidth="165.0" style="-fx-background-color: #ffff33;" text="OYUNA BAŞLA" />
+      <Text layoutX="460.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seviye puanı 30’un üstune ulaşan nesneler terfi ederler.Etki puanları aşağıdaki formüllere göre hesaplanır." wrappingWidth="635.2607421875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="460.0" layoutY="707.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oyunculardan birinin elindeki tüm nesneler tükendiğinde rakip oyuncu oyunu kazanacaktır.Eğer maksimum 10 hamle sonrasında her iki oyuncunun da elinde en az bir nesne varsa bu durumda oyunculardan elindeki nesnelerin toplam dayanıklılık miktarı en fazla olan kazanacak ve bu toplam dayanıklılık değeri kazananın skorunu verecektir" wrappingWidth="635.2607421875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Pane layoutX="467.0" layoutY="470.0" prefHeight="200.0" prefWidth="651.0">
+         <children>
+            <ImageView fitHeight="193.0" fitWidth="659.0" layoutX="-4.0" layoutY="8.0">
+               <image>
+                  <Image url="@Adsız.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

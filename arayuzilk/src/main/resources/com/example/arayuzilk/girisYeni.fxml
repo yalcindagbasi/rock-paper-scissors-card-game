@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #ffe6cc;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.arayuzilk.HelloController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="900.0" prefWidth="421.0" style="-fx-background-color: #3F2862;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="902.0" prefWidth="421.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="-9.0" layoutY="373.0" prefHeight="154.0" prefWidth="440.0" rotate="-90.0" style="-fx-text-fill: White;" text="GİRİŞ">
+                     <font>
+                        <Font size="96.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="menuyeDon" layoutX="14.0" layoutY="31.0" mnemonicParsing="false" onAction="#menuyeDon" prefHeight="34.0" prefWidth="126.0" style="-fx-background-color: #ffff33;" text="Ana Menüye Dön" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Label layoutX="506.0" layoutY="77.0" prefHeight="59.0" prefWidth="622.0" text="TAŞ-KAĞIT-MAKAS OYUNU">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Text layoutX="460.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Baslangıcta belirlenen toplam hamle sayısı tamamlandıgı zaman, (baslangıc toplamhamle sayısı: 10)." wrappingWidth="611.419921875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="460.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Iki taraftan birinin elindeki nesneler tukendiginde,">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="484.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   2-Bilgisayar-bilgisayar oyununda her iki oyuncu icin de rastgele secimlerle ilerler">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="747.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nesneler karsılastırılırak skorlar" wrappingWidth="385.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="497.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1- Önce kullanıcı elindekiler arasından bir nesne seçimi yapar daha sonra bilgisayar rastgele bir secim yapar en son" wrappingWidth="685.2607421875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="460.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Kullanıcı-bilgisayar oyununda oyun temelde su sekilde ilerleyecektir: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="460.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Bilgisayar-Bilgisayar ve Kullanıcı-Bilgisayar olmak üzere iki farklı tür oyun seçeneği vardır.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="460.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Bir oyuncunun diğer bir oyuncuyla rekabet edebileceği taş-kağıt-makas oyunu tasarlanmıştır." wrappingWidth="635.2607421875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="460.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oyun asagıdaki iki kosuldan biri saglandıgında biter." wrappingWidth="417.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="nasilOynanir" layoutX="999.0" layoutY="815.0" mnemonicParsing="false" onAction="#nasilOynanirMenusu" prefHeight="48.0" prefWidth="165.0" style="-fx-background-color: #ffff33;" text="NASIL OYNANIR ? " />
+      <Text layoutX="497.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nesneler karsılastırılırak skorlar hesaplanır ve yeni secimle oyun devam eder. " wrappingWidth="622.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="993.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nesneler karsılastırılırak" wrappingWidth="189.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

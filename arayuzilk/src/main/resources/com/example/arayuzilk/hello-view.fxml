@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.arayuzilk.HelloController">
+   <children>
+      <VBox prefHeight="900.0" prefWidth="421.0" style="-fx-background-color: #3F2862;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="284.0" prefWidth="421.0">
+               <children>
+                  <ImageView fitHeight="300.0" fitWidth="421.0" layoutX="1.0" layoutY="-1.0">
+                     <image>
+                        <Image url="@A.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="300.0" />
+               </padding>
+            </Pane>
+            <Button fx:id="btnGiris" mnemonicParsing="false" onAction="#GirisEkranınaGir" prefHeight="86.0" prefWidth="421.0" style="-fx-background-color: #3F2863; -fx-text-fill: White; -fx-border-color: White;" text="GİRİŞ" textFill="WHITE" />
+            <Button fx:id="btnnasilOynanir" mnemonicParsing="false" onAction="#nasilOynanirMenusu" prefHeight="86.0" prefWidth="421.0" style="-fx-background-color: #3F2863; -fx-text-fill: White; -fx-border-color: White;" text="NASIL OYNANIR?" textFill="WHITE" />
+            <Button fx:id="btnSilahSec" mnemonicParsing="false" onAction="#silahSec" prefHeight="86.0" prefWidth="421.0" style="-fx-background-color: #3F2863; -fx-text-fill: White; -fx-border-color: White;" text="NESNE SEÇ" textFill="WHITE" />
+         </children>
+      </VBox>
+      <Pane fx:id="panelDegisim" layoutX="421.0" layoutY="-4.0" prefHeight="300.0" prefWidth="778.0" style="-fx-background-color: #7b68ee;" styleClass="SD" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0">
+         <children>
+            <Label fx:id="üstYazi" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="77.0" prefHeight="86.0" prefWidth="650.0" style="-fx-text-fill: White;" text="KOCAELİ ÜNİVERSİTESİ" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <Label fx:id="üstYazi1" alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="142.0" prefHeight="86.0" prefWidth="650.0" style="-fx-text-fill: White;" text="BİLGİSAYAR MÜHENDİSLİĞİ" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+
+         </children>
+      </Pane>
+      <StackPane layoutX="429.0" layoutY="302.0" prefHeight="592.0" prefWidth="762.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Text layoutX="143.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KOCAELİ ÜNİVERSİTESİ PROGRAMLAMA LABARATUVARI-1 İKİNCİ PROJESİ" wrappingWidth="496.18603515625">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Label alignment="CENTER" layoutX="52.0" layoutY="143.0" prefHeight="247.0" prefWidth="679.0" text="TAŞ-KAĞIT MAKAS OYUNU">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></StackPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <effect>
+      <Blend />
+   </effect>
+
+</AnchorPane>

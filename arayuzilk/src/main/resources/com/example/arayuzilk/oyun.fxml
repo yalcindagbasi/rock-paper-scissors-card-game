@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anaPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.arayuzilk.OyunController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Max Hamle Sayısı" />
+      <TextField fx:id="hamleSayisiAlani" layoutX="114.0" layoutY="10.0" prefHeight="26.0" prefWidth="38.0" />
+      <Label layoutX="462.0" layoutY="14.0" text="Oyun Türü" />
+      <Button fx:id="oyunaBaslaButonu" layoutX="704.0" layoutY="10.0" mnemonicParsing="false" onAction="#OyunaBaslaButonu" text="Oyuna Başla" />
+      <Pane layoutX="14.0" layoutY="524.0" prefHeight="62.0" prefWidth="200.0" />
+      <ComboBox fx:id="oyunTipiComboBox" layoutX="527.0" layoutY="9.0" prefHeight="26.0" prefWidth="163.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Oyuncu vs Bilgisayar" />
+               <String fx:value="Bilgisayar vs Bilgisayar" />
+
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Pane fx:id="oyunPanel" layoutX="10.0" layoutY="86.0" prefHeight="500.0" prefWidth="780.0" style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;">
+         <children>
+            <Pane fx:id="solPanel0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <Pane fx:id="solPanel0ikon" layoutX="14.0" layoutY="15.0" prefHeight="71.0" prefWidth="71.0" style="-fx-border-color: black;">
+                     <effect>
+                        <ImageInput />
+                     </effect></Pane>
+                  <Label fx:id="solPanel0Nesne" layoutX="115.0" layoutY="7.0" text="Nesne" />
+                  <Button fx:id="solPanel0Butonu" mnemonicParsing="false" onAction="#solPanel0Butonu" opacity="0.15" prefHeight="100.0" prefWidth="200.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="solPanel1" layoutY="100.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <Pane fx:id="solPanel1ikon" layoutX="14.0" layoutY="15.0" prefHeight="71.0" prefWidth="71.0" style="-fx-border-color: black;">
+                     <effect>
+                        <ImageInput />
+                     </effect>
+                  </Pane>
+                  <Label fx:id="solPanel1Nesne" layoutX="115.0" layoutY="7.0" text="Nesne" />
+                  <Button fx:id="solPanel1Butonu" mnemonicParsing="false" onAction="#solPanel1Butonu" opacity="0.15" prefHeight="100.0" prefWidth="200.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="solPanel2" layoutY="200.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <Pane fx:id="solPanel2ikon" layoutX="14.0" layoutY="15.0" prefHeight="71.0" prefWidth="71.0" style="-fx-border-color: black;">
+                     <effect>
+                        <ImageInput />
+                     </effect>
+                  </Pane>
+                  <Label fx:id="solPanel2Nesne" layoutX="115.0" layoutY="7.0" text="Nesne" />
+                  <Button fx:id="solPanel2Butonu" mnemonicParsing="false" onAction="#solPanel2Butonu" opacity="0.15" prefHeight="100.0" prefWidth="200.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="solPanel3" layoutY="300.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <Pane fx:id="solPanel3ikon" layoutX="14.0" layoutY="15.0" prefHeight="71.0" prefWidth="71.0" style="-fx-border-color: black;">
+                     <effect>
+                        <ImageInput />
+                     </effect>
+                  </Pane>
+                  <Label fx:id="solPanel3Nesne" layoutX="115.0" layoutY="7.0" text="Nesne" />
+                  <Button fx:id="solPanel3Butonu" mnemonicParsing="false" onAction="#solPanel3Butonu" opacity="0.15" prefHeight="100.0" prefWidth="200.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="solPanel4" layoutY="400.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <Pane fx:id="solPanel4ikon" layoutX="14.0" layoutY="15.0" prefHeight="71.0" prefWidth="71.0" style="-fx-border-color: black;">
+                     <effect>
+                        <ImageInput />
+                     </effect>
+                  </Pane>
+                  <Label fx:id="solPanel4Nesne" layoutX="115.0" layoutY="7.0" text="Nesne" />
+                  <Button fx:id="solPanel4Butonu" mnemonicParsing="false" onAction="#solPanel4Butonu" opacity="0.15" prefHeight="100.0" prefWidth="200.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="sagPanel0" layoutX="580.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <Pane fx:id="sagPanel0ikon" layoutX="114.0" layoutY="15.0" prefHeight="71.0" prefWidth="71.0" style="-fx-border-color: black;">
+                     <effect>
+                        <ImageInput />
+                     </effect>
+                  </Pane>
+                  <Label fx:id="sagPanel0Nesne" layoutX="15.0" layoutY="7.0" text="Nesne" />
+                  <Button fx:id="sagPanel0Butonu" mnemonicParsing="false" onAction="#sagPanel0Butonu" opacity="0.15" prefHeight="100.0" prefWidth="200.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="sagPanel1" layoutX="580.0" layoutY="100.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <Pane fx:id="sagPanel1ikon" layoutX="114.0" layoutY="15.0" prefHeight="71.0" prefWidth="71.0" style="-fx-border-color: black;">
+                     <effect>
+                        <ImageInput />
+                     </effect>
+                  </Pane>
+                  <Label fx:id="sagPanel1Nesne" layoutX="15.0" layoutY="7.0" text="Nesne" />
+                  <Button fx:id="sagPanel1Butonu" mnemonicParsing="false" onAction="#sagPanel1Butonu" opacity="0.15" prefHeight="100.0" prefWidth="200.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="sagPanel2" layoutX="580.0" layoutY="200.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <Pane fx:id="sagPanel2ikon" layoutX="114.0" layoutY="15.0" prefHeight="71.0" prefWidth="71.0" style="-fx-border-color: black;">
+                     <effect>
+                        <ImageInput />
+                     </effect>
+                  </Pane>
+                  <Label fx:id="sagPanel2Nesne" layoutX="15.0" layoutY="7.0" text="Nesne" />
+                  <Button fx:id="sagPanel2Butonu" mnemonicParsing="false" onAction="#sagPanel2Butonu" opacity="0.15" prefHeight="100.0" prefWidth="200.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="sagPanel3" layoutX="580.0" layoutY="300.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <Pane fx:id="sagPanel3ikon" layoutX="114.0" layoutY="15.0" prefHeight="71.0" prefWidth="71.0" style="-fx-border-color: black;">
+                     <effect>
+                        <ImageInput />
+                     </effect>
+                  </Pane>
+                  <Label fx:id="sagPanel3Nesne" layoutX="15.0" layoutY="7.0" text="Nesne" />
+                  <Button fx:id="sagPanel3Butonu" mnemonicParsing="false" onAction="#sagPanel3Butonu" opacity="0.15" prefHeight="100.0" prefWidth="200.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="sagPanel4" layoutX="580.0" layoutY="400.0" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <Pane fx:id="sagPanel4ikon" layoutX="114.0" layoutY="15.0" prefHeight="71.0" prefWidth="71.0" style="-fx-border-color: black;">
+                     <effect>
+                        <ImageInput />
+                     </effect>
+                  </Pane>
+                  <Label fx:id="sagPanel4Nesne" layoutX="15.0" layoutY="7.0" text="Nesne" />
+                  <Button fx:id="sagPanel4Butonu" mnemonicParsing="false" onAction="#sagPanel4Butonu" opacity="0.15" prefHeight="100.0" prefWidth="200.0">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="vsPanelUst" layoutX="315.0" layoutY="25.0" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: black;" />
+            <Pane fx:id="vsPanelAlt" layoutX="315.0" layoutY="225.0" prefHeight="150.0" prefWidth="150.0" style="-fx-border-color: black;" />
+            <Label layoutX="385.0" layoutY="192.0" text="vs" />
+            <Button fx:id="oynaButonu" layoutX="336.0" layoutY="400.0" mnemonicParsing="false" onAction="#oynaButonu" prefHeight="62.0" prefWidth="108.0" text="Oyna" />
+            <Label fx:id="vsUstDayaniklilik" layoutX="226.0" layoutY="50.0" />
+            <Label fx:id="vsUstDeneyim" layoutX="496.0" layoutY="50.0" />
+            <Label fx:id="vsUstNesne" layoutX="373.0" layoutY="175.0" />
+            <Label fx:id="vsAltNesne" layoutX="373.0" layoutY="209.0" />
+            <Label fx:id="vsAltDayaniklilik" layoutX="226.0" layoutY="342.0" />
+            <Label fx:id="vsAltDeneyim" layoutX="496.0" layoutY="342.0" />
+            <Label fx:id="labelSkorOyuncu1" layoutX="212.0" layoutY="462.0" text="Skor:" />
+            <Label fx:id="labelSkorOyuncu2" layoutX="541.0" layoutY="462.0" text="Skor:" />
+            <Label fx:id="oyuncu1adi" layoutX="211.0" layoutY="6.0" text="Oyuncu1" />
+            <Label fx:id="oyuncu2adi" layoutX="519.0" layoutY="6.0" text="Oyuncu2" />
+         </children></Pane>
+      <Label fx:id="labelSayiHatasi" layoutX="163.0" layoutY="15.0" textFill="RED" />
+      <Label fx:id="labelKazanan" layoutX="386.0" layoutY="59.0" />
+      <Label fx:id="suAnkiHamle" layoutX="14.0" layoutY="68.0" text="Hamle:" />
+      <Label layoutX="14.0" layoutY="42.0" text="Kullanıcı Adı:" />
+      <TextField fx:id="kullaniciadi" layoutX="114.0" layoutY="38.0" prefHeight="26.0" prefWidth="93.0" text="Oyuncu" />
+   </children>
+</AnchorPane>

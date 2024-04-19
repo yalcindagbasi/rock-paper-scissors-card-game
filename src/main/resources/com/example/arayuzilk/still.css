@@ -1,0 +1,17 @@
+#root{
+    -fx-background-size: cover;
+}
+#ust{
+    -fx-background-color: antiquewhite;
+}
+#karakter{
+    -fx-background-color: antiquewhite;
+}
+#font{
+    font-family: 'Roboto';
+}
+
+.text {
+    -fx-font-family: "Roboto";
+
+}
